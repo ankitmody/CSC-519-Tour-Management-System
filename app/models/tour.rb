@@ -4,7 +4,7 @@ class Tour < ApplicationRecord
 
   validates :name, :presence => true
   validates :description, :presence => true
-  validates :price, :presence => true, numericality: { only_integer: true }
+  validates :price, :presence => true
   validates :booking_deadline, :presence => true
   validates :start_date, :presence => true
   validates :end_date, :presence => true

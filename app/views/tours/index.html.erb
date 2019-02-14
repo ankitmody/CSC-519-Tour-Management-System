@@ -22,7 +22,6 @@
   </thead>
 
   <tbody>
-    <% if session[:role] == 'Admin' %>
     <% @tours.each do |tour| %>
       <tr>
         <td><%= tour.id %></td>
@@ -38,13 +37,9 @@
         <td><%= tour.seats %></td>
         <td><%= tour.status %></td>
         <td><%= link_to 'Show', tour %></td>
-        <td><%= link_to 'Edit', edit_tour_path(tour) %></td>
-        <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to_if(tour.agent_id == current_user.id,'Edit', edit_tour_path(tour))%></td>
+        <td><%= link_to_if(tour.agent_id == current_user.id,'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
       </tr>
-    <% end %>
-  <% else %>
-  <% id =  %>
-
     <% end %>
   </tbody>
 </table>
