@@ -8,7 +8,6 @@
       <th>Id</th>
       <th>Name</th>
       <th>Description</th>
-      <th>Photo</th>
       <th>Price</th>
       <th>Booking deadline</th>
       <th>Start date</th>
@@ -23,25 +22,29 @@
   </thead>
 
   <tbody>
+    <% if session[:role] == 'Admin' %>
     <% @tours.each do |tour| %>
       <tr>
         <td><%= tour.id %></td>
         <td><%= tour.name %></td>
         <td><%= tour.description %></td>
-        <td><%= tour.photo %></td>
         <td><%= tour.price %></td>
         <td><%= tour.booking_deadline %></td>
         <td><%= tour.start_date %></td>
         <td><%= tour.end_date %></td>
         <td><%= tour.start_location %></td>
         <td><%= tour.itinerary %></td>
-        <td><%= tour.contact_agent %></td>
+        <td><%= tour.agent_id %></td>
         <td><%= tour.seats %></td>
         <td><%= tour.status %></td>
         <td><%= link_to 'Show', tour %></td>
         <td><%= link_to 'Edit', edit_tour_path(tour) %></td>
         <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    <% end %>
+  <% else %>
+  <% id =  %>
+
     <% end %>
   </tbody>
 </table>

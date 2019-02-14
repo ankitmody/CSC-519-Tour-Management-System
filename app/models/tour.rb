@@ -11,6 +11,7 @@ class Tour < ApplicationRecord
   validates :start_location, :presence => true
   validates :itinerary, :presence => true
   validates :seats, :presence => true
+  # validates :agent_id, :presence => true
   validates :status, :presence => true
 
   #adding the class of uploader to the model where it needs to be uploaded/shown

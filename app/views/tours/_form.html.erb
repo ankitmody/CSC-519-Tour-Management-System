@@ -67,7 +67,7 @@
       <%= select("tour", "agent_id", Agent.all.collect{ |c| [ c.name, c.id ]}, { include_blank: true }) %>
   <% else %>
     <%= form.label "Agent" %>
-    <%= form.select :contact_agent, [current_user.name] %>
+    <%= form.select :agent_id, [[current_user.name,current_user.id]] %>
     </div>
   <% end %>
 
