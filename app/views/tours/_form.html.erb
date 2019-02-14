@@ -13,22 +13,17 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, placeholder: "Enter Name"   %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :photo %>
-    <%= form.text_field :photo %>
+    <%= form.text_area :description%>
   </div>
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.number_field :price %>
   </div>
 
   <div class="field">
@@ -57,18 +52,28 @@
   </div>
 
   <div class="field">
-    <%= form.label :contact_agent %>
-    <%= form.text_field :contact_agent %>
-  </div>
-
-  <div class="field">
     <%= form.label :seats %>
     <%= form.number_field :seats %>
   </div>
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.text_field :status %>
+    <%= form.select :status, ['In Future', 'Current', 'Cancelled']%>
+  </div>
+
+  <% if session[:role] == 'Admin' %>
+    <div class="field">
+      <%= form.label "Agent" %>
+      <%= select("tour", "agent_id", Agent.all.collect{ |c| [ c.name, c.id ]}, { include_blank: true }) %>
+  <% else %>
+    <%= form.label "Agent" %>
+    <%= form.select :contact_agent, [current_user.name] %>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label "Upload Tour Images"%>
+    <%= form.file_field :image %>
   </div>
 
   <div class="actions">

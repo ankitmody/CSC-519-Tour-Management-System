@@ -13,7 +13,7 @@ class CreateTours < ActiveRecord::Migration[5.2]
       t.integer :seats
       t.string :status
       t.string :image
-
+#sdfd
       t.timestamps
     end
   end

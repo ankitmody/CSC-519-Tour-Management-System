@@ -10,9 +10,9 @@ module SessionsHelper
         @current_user ||= Customer.find_by(id: session[:user_id])
       else if session[:role]=='Agent'
         @current_user ||= Agent.find_by(id: session[:user_id])
-       else
-             @current_user ||= Admin.find_by(id: session[:user_id])
-        end
+      else
+        @current_user ||= Admin.find_by(id: session[:user_id])
+      end
       end
     end
   end

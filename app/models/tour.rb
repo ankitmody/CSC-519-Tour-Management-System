@@ -10,7 +10,6 @@ class Tour < ApplicationRecord
   validates :end_date, :presence => true
   validates :start_location, :presence => true
   validates :itinerary, :presence => true
-  validates :contact_agent, :presence => true
   validates :seats, :presence => true
   validates :status, :presence => true
 
