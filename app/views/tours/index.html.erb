@@ -46,4 +46,8 @@
 
 <br>
 
-<%= link_to 'New Tour', new_tour_path %>
+<!--only for agent and admin-->
+<%if(session[:role] == 'Admin' || session[:role] == 'Agent') %>>
+<%= link_to 'New Tour', new_tour_path  %>
+<% else link_to = 'Search Tours', new_search_path %>>
+<%end%>
