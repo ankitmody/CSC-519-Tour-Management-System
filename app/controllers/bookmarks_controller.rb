@@ -13,18 +13,24 @@ class BookmarksController < ApplicationController
   end
 
   # GET /bookmarks/new
-  def new
-    @bookmark = Bookmark.new
-  end
+  # def new
+  #   @bookmark = Bookmark.new
+  # end
 
   # GET /bookmarks/1/edit
   def edit
   end
 
+  def potential_buyers
+    @bookmarks = Bookmark.all
+    @bookmark= Bookmark.where("tour_id == ? " , "#{params[:tour_id]}")
+  end
   # POST /bookmarks
   # POST /bookmarks.json
-  def create
-    @bookmark = Bookmark.new(bookmark_params)
+  def add
+    @bookmark= Bookmark.includes(:customer, :tour).new(tour_id: params[:tour_id] , customer_id: params[:customer_id])
+
+    # @bookmark = Bookmark.new(bookmark_params)
 
     respond_to do |format|
       if @bookmark.save
@@ -69,6 +75,6 @@ class BookmarksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bookmark_params
-      params.fetch(:bookmark, {})
+      params.fetch(:bookmark, :customer_id, :tour_id)
     end
 end

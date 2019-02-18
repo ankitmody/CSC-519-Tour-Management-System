@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :agents
   resources :admins
 
+  get 'bookmarks/potential_buyers/:tour_id', to: 'bookmarks#potential_buyers'
+  get 'bookmarks/add/:customer_id/:tour_id', to: 'bookmarks#add'
+
   root 'static_page#home'
   get '/home', to: 'static_pages#home'
   get    '/signup',  to: 'sessions#redirect'
