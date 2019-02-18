@@ -2,13 +2,159 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="152843b5-311d-4741-97a5-e562ae3e2afd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TourManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TourManagementSystem.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/admins.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/admins.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/agents.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/agents.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bookmarks.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/bookmarks.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/cable.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/cable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/customers.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/customers.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/tours.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/tours.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/admins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/admins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/agents.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/agents.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/bookmarks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bookmarks.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/customers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/customers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/tours.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/tours.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/agents_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/agents_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/bookmarks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/bookmarks_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/customers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/customers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tours_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tours_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/admins_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/admins_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/agents_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/agents_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/bookmarks_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/bookmarks_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/customers_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/customers_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/tours_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/tours_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jobs/application_job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/admin.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/agent.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/agent.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/application_record.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/bookmark.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bookmark.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/customer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/customer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/tour.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/tour.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/_admin.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/_admin.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/index.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/show.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admins/show.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/_agent.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/_agent.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/index.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/agents/show.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/agents/show.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/_bookmark.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/_bookmark.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/index.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/bookmarks/show.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookmarks/show.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/_customer.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/_customer.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/index.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/show.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/show.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tours/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tours/_tour.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/_tour.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tours/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/tours/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tours/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/index.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tours/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tours/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tours/show.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tours/show.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/rails" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rails" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/rake" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/setup" beforeDir="false" afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/update" beforeDir="false" afterPath="$PROJECT_DIR$/bin/update" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/yarn" beforeDir="false" afterPath="$PROJECT_DIR$/bin/yarn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/boot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/puma.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/storage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/storage.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190210184736_create_admins.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190210184736_create_admins.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190210185039_create_agents.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190210185039_create_agents.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190210185338_create_customers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190210185338_create_customers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190210195526_create_tours.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190210195526_create_tours.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190210201521_create_bookmarks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190210201521_create_bookmarks.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190212204154_add_password_digest_to_agents.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190212204154_add_password_digest_to_agents.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/422.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/422.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/admins_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/admins_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/agents_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/agents_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/bookmarks_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/bookmarks_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/customers_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/customers_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/tours_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/tours_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/admins.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/admins.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/agents.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/agents.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/bookmarks.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/bookmarks.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/customers.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/customers.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/tours.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/tours.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/admin_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/admin_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/agent_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/agent_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/bookmark_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/bookmark_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/customer_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/customer_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/tour_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/tour_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/admins_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/admins_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/agents_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/agents_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/bookmarks_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/bookmarks_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/customers_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/customers_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/tours_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/tours_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +164,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Tour_Management_System@Development__TourManagementSystem.rcov" NAME="Development: TourManagementSystem Coverage Results" MODIFIED="1550442275223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TourManagementSystem" />
-    <SUITE FILE_PATH="coverage/TourManagementSystem@db_migrate__TourManagementSystem.rcov" NAME="db:migrate: TourManagementSystem Coverage Results" MODIFIED="1549832609009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TourManagementSystem" />
+    <SUITE FILE_PATH="coverage/TourManagementSystem@db_migrate__TourManagementSystem.rcov" NAME="db:migrate: TourManagementSystem Coverage Results" MODIFIED="1550449052507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TourManagementSystem" />
     <SUITE FILE_PATH="coverage/Tour_Management_System@db_migrate__TourManagementSystem.rcov" NAME="db:migrate: TourManagementSystem Coverage Results" MODIFIED="1550425754476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TourManagementSystem" />
-    <SUITE FILE_PATH="coverage/TourManagementSystem@Development__TourManagementSystem.rcov" NAME="Development: TourManagementSystem Coverage Results" MODIFIED="1550178189873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TourManagementSystem" />
+    <SUITE FILE_PATH="coverage/TourManagementSystem@Development__TourManagementSystem.rcov" NAME="Development: TourManagementSystem Coverage Results" MODIFIED="1550454272794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TourManagementSystem" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -39,64 +185,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/tours/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/models/search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+            <state relative-caret-position="272">
+              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/tours_controller.rb">
+        <entry file="file://$PROJECT_DIR$/app/views/searches/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="272">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tours/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/searches/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="17">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/searches_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/customers/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/customers/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="45" />
+              <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -159,14 +278,16 @@
         <option value="$PROJECT_DIR$/app/views/tours/search.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tours/_searchform.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tours_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/customers/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/searches/_form.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20190217181911_add_attributes_search.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/searches_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/searches/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/search.rb" />
         <option value="$PROJECT_DIR$/app/views/tours/index.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190218005254_add_search_parameters.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190218012456_add_seats_to_search.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/searches_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/searches/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/search.rb" />
       </list>
     </option>
   </component>
@@ -191,45 +312,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Tour-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tour-Management-System" type="462c0819:PsiDirectoryNode" />
+              <item name="TourManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourManagementSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tour-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tour-Management-System" type="462c0819:PsiDirectoryNode" />
+              <item name="TourManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tour-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tour-Management-System" type="462c0819:PsiDirectoryNode" />
+              <item name="TourManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tour-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tour-Management-System" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tour-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tour-Management-System" type="462c0819:PsiDirectoryNode" />
+              <item name="TourManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="customers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tour-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tour-Management-System" type="462c0819:PsiDirectoryNode" />
+              <item name="TourManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="tours" type="462c0819:PsiDirectoryNode" />
+              <item name="searches" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TourManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,28 +506,29 @@
       <workItem from="1550421135372" duration="2908000" />
       <workItem from="1550425691423" duration="4438000" />
       <workItem from="1550441929729" duration="2207000" />
+      <workItem from="1550448985778" duration="6622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80541000" />
+    <option name="totallyTimeSpent" value="87163000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.30201343" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.30635402" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.39235127" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.39116204" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32733223" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49924356" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49924356" visible="true" weight="0.299509" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -434,34 +554,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190214181539_add_agent_to_tours.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190210195526_create_tours.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190210201521_create_bookmarks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/agents/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -538,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tours/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tours/show.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -559,13 +644,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tours/_searchform.html.erb" />
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" selection-start-line="14" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -591,13 +669,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/searches/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tours/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/agents/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -618,55 +689,10 @@
     <entry file="file://$PROJECT_DIR$/app/views/searches/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/searches/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190217181911_add_attributes_search.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/searches_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/searches/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/searches/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/searches/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/search.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -677,17 +703,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/tours/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="304">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/customers/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/tours_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="326">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tours/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -698,24 +731,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tours/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/customers/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        <state relative-caret-position="326">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tours_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/searches/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190210195526_create_tours.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tours/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190217181911_add_attributes_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        <state relative-caret-position="85">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tours/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tours/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190218005254_add_search_parameters.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190218012456_add_seats_to_search.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/searches_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/searches/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/searches_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/searches/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/search.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>

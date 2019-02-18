@@ -28,6 +28,6 @@ class SearchesController < ApplicationController
   # private
     # Never trust parameters from the scary internet, only allow the white list through.
     def search_params
-      params.require(:search).permit(:itinerary)
+      params.require(:search).permit(:itinerary,:min_price,:max_price,:seats,:start_date_from, :start_date_to)
     end
 end

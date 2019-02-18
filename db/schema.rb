@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_17_181911) do
+ActiveRecord::Schema.define(version: 2019_02_18_012456) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email"
@@ -51,6 +51,12 @@ ActiveRecord::Schema.define(version: 2019_02_17_181911) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "itinerary"
+    t.float "min_price"
+    t.float "max_price"
+    t.string "name"
+    t.date "start_date_from"
+    t.date "start_date_to"
+    t.integer "seats"
   end
 
   create_table "tours", force: :cascade do |t|

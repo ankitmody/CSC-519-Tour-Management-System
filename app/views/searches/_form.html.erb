@@ -14,6 +14,21 @@
   <div class="field form-group">
     <%= form.label :itinerary %>
     <%= form.text_field :itinerary %>
+
+    <%= form.label :min_price %>
+    <%= form.text_field :min_price %>
+
+    <%= form.label :max_price %>
+    <%= form.text_field :max_price %>
+
+    <%= form.label :seats %>
+    <%= form.check_box :seats%>
+
+    <%= form.label :start_date_from %>
+    <%= form.date_select :start_date_from%>
+
+    <%= form.label :start_date_to %>
+    <%= form.date_select :start_date_to %>
   </div>
      <div class="actions form-group">
      <%= form.submit 'Search', class: 'btn btn-primary' %>
