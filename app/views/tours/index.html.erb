@@ -37,8 +37,10 @@
         <td><%= tour.seats %></td>
         <td><%= tour.status %></td>
         <td><%= link_to 'Show', tour %></td>
-        <td><%= link_to_if(tour.agent_id == current_user.id,'Edit', edit_tour_path(tour))%></td>
-        <td><%= link_to_if(tour.agent_id == current_user.id,'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
+        <%if session[:role] != 'Customer' %>
+        <td><%= link_to_if((tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Edit', edit_tour_path(tour))%></td>
+        <td><%= link_to_if((tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -47,7 +49,8 @@
 <br>
 
 <!--only for agent and admin-->
-<%if(session[:role] == 'Admin' || session[:role] == 'Agent') %>>
+<%if(session[:role] == 'Admin' || session[:role] == 'Agent') %>
 <%= link_to 'New Tour', new_tour_path  %>
-<% else link_to = 'Search Tours', new_search_path %>>
+<% else %>
+  <%= link_to 'Search Tours', new_search_path %>
 <%end%>
