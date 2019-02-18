@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :bookings
   resources :searches
   resources :bookmarks
   resources :tours
@@ -8,6 +9,7 @@ Rails.application.routes.draw do
 
   get 'bookmarks/potential_buyers/:tour_id', to: 'bookmarks#potential_buyers'
   get 'bookmarks/add/:customer_id/:tour_id', to: 'bookmarks#add'
+  get '/bookings/new/:tour_id', to: 'bookings#new'
 
   root 'static_page#home'
   get '/home', to: 'static_pages#home'
