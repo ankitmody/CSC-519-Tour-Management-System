@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: [:show, :edit, :update, :destroy]
+  before_action :set_booking, only: [:show, :edit, :update]
 
   # GET /bookings
   # GET /bookings.json
@@ -15,7 +15,6 @@ class BookingsController < ApplicationController
   # GET /bookings/new
   def new
     @booking = Booking.new
-    @id = params[:id]
   end
 
   # GET /bookings/1/edit
@@ -26,6 +25,10 @@ class BookingsController < ApplicationController
   # POST /bookings.json
   def create
     @booking = Booking.new(booking_params)
+    @tour = Tour.find(booking_params[:tour_id])
+    seats = @tour.seats.to_i - booking_params[:seats_booked].to_i
+    @tour.seats = seats
+    @tour.save
 
     respond_to do |format|
       if @booking.save
@@ -36,6 +39,7 @@ class BookingsController < ApplicationController
         format.json { render json: @booking.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /bookings/1
@@ -55,6 +59,14 @@ class BookingsController < ApplicationController
   # DELETE /bookings/1
   # DELETE /bookings/1.json
   def destroy
+    @booking = Booking.find(params[:booking_id])
+
+    @tour = Tour.find(params[:tour_id])
+    puts params
+    seats = @tour.seats.to_i + @booking.seats_booked.to_i
+    @tour.seats = seats
+    @tour.save
+
     @booking.destroy
     respond_to do |format|
       format.html { redirect_to bookings_url, notice: 'Booking was successfully destroyed.' }
@@ -65,7 +77,10 @@ class BookingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_booking
+      # puts "---------------------------"
+      # puts params
       @booking = Booking.find(params[:id])
+
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

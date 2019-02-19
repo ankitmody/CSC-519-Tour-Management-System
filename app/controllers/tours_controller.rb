@@ -37,6 +37,11 @@ class ToursController < ApplicationController
     end
   end
 
+  def decrement_seats
+    @tour = Tour.all
+
+  end
+
   # PATCH/PUT /tours/1
   # PATCH/PUT /tours/1.json
   def update

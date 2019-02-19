@@ -36,7 +36,6 @@
         <td><%= tour.agent.name %></td>
         <td><%= tour.seats %></td>
         <td><%= tour.status %></td>
-        <td><%= link_to 'Book', "/bookings/new/#{tour.id}" %></td>
         <td><%= link_to 'Show', tour %></td>
         <% unless session[:role] == 'Customer'%>  <%# Only Logged in Realtor and Admin has access %>
           <td> <%= link_to 'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  %></td>
@@ -47,7 +46,7 @@
         <% end %>
         <% if session[:role] == 'Customer' || session[:role] == 'Admin' %>
           <td><%= link_to 'Bookmark', "/bookmarks/add/#{current_user.id}/#{tour.id}"%></td>
-
+          <td><%= link_to 'Book', "/bookings/new/#{tour.id}" %></td>
 <!--          <td><%#= tour.id %></td>-->
         <% end %>
       </tr>
