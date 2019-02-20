@@ -26,20 +26,42 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     @tour = Tour.find(booking_params[:tour_id])
-    seats = @tour.seats.to_i - booking_params[:seats_booked].to_i
-    @tour.seats = seats
-    @tour.save
+    @booking_waitlisted = Booking.new(booking_params)
+    if (@tour.seats.to_i >= booking_params[:seats_booked].to_i)
+      seats = @tour.seats.to_i - booking_params[:seats_booked].to_i
+      @tour.seats = seats
+      @tour.save
+      @booking.status = 1
+    else
+      if (booking_params[:preference] == "Book available seats")
+        @booking.seats_booked = @tour.seats
+        seats = 0
+        @tour.seats = seats
+        @tour.save
+        @booking.status = 1
+      elsif (booking_params[:preference] == "Book Available seats and add remaining to waitlist")
+        @booking.seats_booked = @tour.seats
+        @tour.seats = 0
+        @tour.save
+        @booking.status = 1
 
-    respond_to do |format|
-      if @booking.save
-        format.html { redirect_to @booking, notice: 'Booking was successfully created.' }
-        format.json { render :show, status: :created, location: @booking }
-      else
-        format.html { render :new }
-        format.json { render json: @booking.errors, status: :unprocessable_entity }
+      #   to handle waitlist seats
+        @booking_waitlisted.seats_booked = @booking_waitlisted.seats_booked - @booking.seats_booked
+        @booking_waitlisted.status = 0
+        @booking_waitlisted.save
+      elsif (booking_params[:preference] == "Book only if all seats are available")
+        @booking.status = 0
       end
     end
-
+    respond_to do |format|
+        if  @booking.save
+          format.html { redirect_to @booking, notice: 'Booking was successfully created.' }
+          format.json { render :show, status: :created, location: @booking }
+        else
+          format.html { render :new }
+          format.json { render json: @booking.errors, status: :unprocessable_entity }
+        end
+    end
   end
 
   # PATCH/PUT /bookings/1
@@ -60,12 +82,13 @@ class BookingsController < ApplicationController
   # DELETE /bookings/1.json
   def destroy
     @booking = Booking.find(params[:booking_id])
-
-    @tour = Tour.find(params[:tour_id])
-    puts params
-    seats = @tour.seats.to_i + @booking.seats_booked.to_i
-    @tour.seats = seats
-    @tour.save
+    if @booking.status == 1
+      @tour = Tour.find(params[:tour_id])
+      puts params
+      seats = @tour.seats.to_i + @booking.seats_booked.to_i
+      @tour.seats = seats
+      @tour.save
+    end
 
     @booking.destroy
     respond_to do |format|
@@ -77,15 +100,11 @@ class BookingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_booking
-      # puts "---------------------------"
-      # puts params
       @booking = Booking.find(params[:id])
-
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def booking_params
-
-      params.fetch(:booking).permit(:customer_id,:tour_id,:seats_booked)
+      params.fetch(:booking).permit(:customer_id,:tour_id,:seats_booked,:preference)
     end
 end

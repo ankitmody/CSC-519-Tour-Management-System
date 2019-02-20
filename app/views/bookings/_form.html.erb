@@ -26,7 +26,11 @@
     <%= form.number_field :seats_booked %>
   </div>
 
-  <%# form.hidden_field :customer_id, :value => "1" %>
+  <div class="field">
+    <%= form.label :preference %>
+    <%= form.select :preference, ['Book available seats', 'Book Available seats and add remaining to waitlist', 'Book only if all seats are available'], { include_blank: true }%>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

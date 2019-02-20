@@ -65,5 +65,9 @@
   <%= @tour.status %>
 </p>
 
-<%= link_to 'Edit', edit_tour_path(@tour) %> |
+
+<!--Check for agent and admin edit only-->
+<% if session[:role] == 'Agent' || session[:role] == 'Admin'%>
+  <%= link_to 'Edit', edit_tour_path(@tour) %> |
+<%end %>
 <%= link_to 'Back', tours_path %>

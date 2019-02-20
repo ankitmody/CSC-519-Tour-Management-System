@@ -47,7 +47,7 @@
         <% if session[:role] == 'Customer' || session[:role] == 'Admin' %>
           <td><%= link_to 'Bookmark', "/bookmarks/add/#{current_user.id}/#{tour.id}"%></td>
           <td><%= link_to 'Book', "/bookings/new/#{tour.id}" %></td>
-<!--          <td><%#= tour.id %></td>-->
+
         <% end %>
       </tr>
     <% end %>
@@ -62,3 +62,5 @@
 <% else %>
   <%= link_to 'Search Tours', new_search_path %>
 <%end%>
+
+<a href="javascript:history.back()" class="btn btn-default">Back</a>

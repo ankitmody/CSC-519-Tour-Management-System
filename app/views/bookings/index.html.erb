@@ -5,10 +5,11 @@
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
       <th>Seats Booked </th>
       <th>Tour Name </th>
       <th>Contact Agent </th>
+      <th>Booking Status </th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -18,9 +19,14 @@
         <td><%= booking.seats_booked %> </td>
         <td><%= booking.tour.name %> </td>
         <td><%= booking.tour.agent.name %> </td>
-        <td><%= link_to 'Show', booking %></td>
-        <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
-        <td><%= link_to 'Destroy', "bookings/#{booking.id}/#{booking.tour.id}", data: { confirm: 'Are you sure?' } %></td>
+        <% if booking.status == 1  %>
+          <td><%= 'Confirmed' %> </td>
+        <% else %>
+          <td><%= 'Wait Listed' %> </td>
+        <%end %>
+<!--        <td><%#= link_to 'Show', booking %></td>-->
+<!--        <td><%#= link_to 'Edit', edit_booking_path(booking) %></td>-->
+        <td><%= link_to 'Delete Booking', "bookings/#{booking.id}/#{booking.tour.id}", data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +34,5 @@
 
 <br>
 
-<%= link_to 'New Booking', new_booking_path %>
+<%#= link_to 'New Booking', new_booking_path %>
+<a href="javascript:history.back()" class="btn btn-default">Back</a>
