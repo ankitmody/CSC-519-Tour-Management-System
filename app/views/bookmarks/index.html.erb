@@ -2,8 +2,6 @@
 
 <h1>Bookmarks</h1>
 
-<% @bookmarks.each do |bookmark| %>
-
 <table>
   <thead>
     <tr>
@@ -16,7 +14,7 @@
   </thead>
 
   <tbody>
-
+  <% @bookmarks.each do |bookmark| %>
      <%if current_user.id == bookmark.customer_id %>
       <tr>
         <td scope="row"><%= bookmark.customer.name %></td>
