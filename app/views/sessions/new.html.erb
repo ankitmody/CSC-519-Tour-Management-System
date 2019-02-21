@@ -4,7 +4,7 @@
   <div class="col-md-6 col-md-offset-3">
     <div class="row center form">
       <%= form_for(:session, url: login_path) do |f| %>
-
+        <%= flash[:message]%>
         <%= f.label :email %>
         <%= f.email_field :email %>
         <br>

@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
       log_in user,role
       redirect_to current_user
     else
-      flash[:danger] = 'Invalid email/password'
+      flash[:message] = 'Invalid email/password'
       render 'new'
     end
   end
