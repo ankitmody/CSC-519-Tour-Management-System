@@ -41,8 +41,8 @@
           <td> <%= link_to 'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  %></td>
           <%end %>
         <%if session[:role] != 'Customer' %>
-        <td><%= link_to_if((tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Edit', edit_tour_path(tour))%></td>
-        <td><%= link_to_if((tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
+        <td><%= link_to_if(tour.status != 'Completed' && (tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Edit', edit_tour_path(tour))%></td>
+        <td><%= link_to_if(tour.status != 'Completed' &&(tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
         <% end %>
         <% if session[:role] == 'Customer' || session[:role] == 'Admin' %>
           <td><%= link_to 'Bookmark', "/bookmarks/add/#{current_user.id}/#{tour.id}"%></td>

@@ -58,7 +58,7 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.select :status, ['In Future', 'Current', 'Cancelled']%>
+    <%= form.select :status, ['In Future', 'Completed', 'Cancelled']%>
   </div>
 
   <% if session[:role] == 'Admin' %>
