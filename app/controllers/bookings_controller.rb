@@ -88,6 +88,21 @@ class BookingsController < ApplicationController
       seats = @tour.seats.to_i + @booking.seats_booked.to_i
       @tour.seats = seats
       @tour.save
+
+      @tour = Tour.find(params[:tour_id])
+
+        # booking_db = Booking.order("created_at ASC").find(params[:tour_id])
+      booking_db = Booking.all.sort_by {|booking| booking.created_at }
+      booking_db.each do |booking|
+          if booking.seats_booked <= @tour.seats && booking.status == 0
+            @tour.seats = @tour.seats - booking.seats_booked
+            booking.status = 1
+            booking.save
+            @tour.save
+          end
+        end
+
+
     end
 
     @booking.destroy
