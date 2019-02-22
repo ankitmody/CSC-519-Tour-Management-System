@@ -38,7 +38,7 @@
         <td><%= tour.status %></td>
         <td><%= link_to 'Show', tour %></td>
         <% unless session[:role] == 'Customer'%>  <%# Only Logged in Realtor and Admin has access %>
-          <td> <%= link_to 'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  %></td>
+          <td> <%= link_to_if(current_user.id == tour.agent.id,  'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  ) %></td>
 <!--          <td> <%#= link_to 'View Reviews', reviews_path  %></td>-->
           <%end %>
         <%if session[:role] != 'Customer' %>

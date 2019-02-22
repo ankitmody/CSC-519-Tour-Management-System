@@ -22,9 +22,10 @@
         <tbody>
         <% @bookmarks.each do |bookmark| %>
           <tr>
+            <% if (bookmark.tour_id.to_i == params[:tour_id].to_i) %>
             <td scope="row"><%= bookmark.customer.name %></td>
             <td scope="row"><%= bookmark.customer.email %></td>
-<!--            <td scope="row"><%#= favourite.house_hunter.phone %></td>-->
+            <% end %>
           </tr>
         <% end %>
         </tbody>
