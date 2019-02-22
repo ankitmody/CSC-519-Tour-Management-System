@@ -33,7 +33,7 @@ class BookingsController < ApplicationController
       @tour.save
       @booking.status = 1
     else
-      if (booking_params[:preference] == "Book available seats")
+      if (booking_params[:preference] == "Book available seats" && @tour.seats.to_i > 0)
         @booking.seats_booked = @tour.seats
         seats = 0
         @tour.seats = seats

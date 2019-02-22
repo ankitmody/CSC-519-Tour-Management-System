@@ -28,8 +28,18 @@
 
   <div class="field">
     <%= form.label :preference %>
+    <% if Tour.where(id: params[:tour_id]).pluck(:seats).first > 0%>
     <%= form.select :preference, ['Book available seats', 'Book Available seats and add remaining to waitlist', 'Book only if all seats are available'], { include_blank: true }%>
+    <%else%>
+      <%= form.select :preference, ['Book Available seats and add remaining to waitlist', 'Book only if all seats are available'], { include_blank: true }%>
+    <%end%>
   </div>
+
+  <div class="field">
+    <%= form.label :waitlist_count %>
+    <%= Booking.where(tour_id: params[:tour_id], status: 0).count %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>
