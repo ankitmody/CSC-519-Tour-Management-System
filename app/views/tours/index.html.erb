@@ -39,6 +39,7 @@
         <td><%= link_to 'Show', tour %></td>
         <% unless session[:role] == 'Customer'%>  <%# Only Logged in Realtor and Admin has access %>
           <td> <%= link_to 'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  %></td>
+<!--          <td> <%#= link_to 'View Reviews', reviews_path  %></td>-->
           <%end %>
         <%if session[:role] != 'Customer' %>
         <td><%= link_to_if(tour.status != 'Completed' && (tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Edit', edit_tour_path(tour))%></td>
@@ -47,7 +48,6 @@
         <% if session[:role] == 'Customer' || session[:role] == 'Admin' %>
           <td><%= link_to 'Bookmark', "/bookmarks/add/#{current_user.id}/#{tour.id}"%></td>
           <td><%= link_to 'Book', "/bookings/new/#{tour.id}" %></td>
-
         <% end %>
       </tr>
     <% end %>

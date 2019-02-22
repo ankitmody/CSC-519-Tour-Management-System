@@ -27,12 +27,15 @@
 <!--        <td><%#= link_to 'Show', booking %></td>-->
 <!--        <td><%#= link_to 'Edit', edit_booking_path(booking) %></td>-->
         <td><%= link_to 'Delete Booking', "bookings/#{booking.id}/#{booking.tour.id}", data: { confirm: 'Are you sure?' } %></td>
+        <% if booking.tour.status == 'Completed' %>
+          <td><%= link_to 'Write Review', "reviews/#{booking.customer.id}/#{booking.tour.id}" %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
+<%#= link_to 'Back', customers_path %>
 <%#= link_to 'New Booking', new_booking_path %>
 <a href="javascript:history.back()" class="btn btn-default">Back</a>
