@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get '/reviews/:customer_id/:tour_id', to: 'reviews#new'
 
   root 'static_page#home'
-  get '/home', to: 'static_pages#home'
+  get '/home', to: 'static_page#home'
   get    '/signup',  to: 'sessions#redirect'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
