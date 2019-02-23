@@ -26,7 +26,7 @@
         <%end %>
 <!--        <td><%#= link_to 'Show', booking %></td>-->
 <!--        <td><%#= link_to 'Edit', edit_booking_path(booking) %></td>-->
-        <td><%= link_to 'Delete Booking', "bookings/#{booking.id}/#{booking.tour.id}", data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Delete Booking', "bookings/#{booking.id}/#{booking.tour.id}", data: { confirm: 'Are you sure?' } %></td>
 
         <% if booking.tour.status == 'Completed' %>
           <td><%= link_to 'Write Review', "reviews/#{booking.customer.id}/#{booking.tour.id}" %></td>
