@@ -19,7 +19,7 @@
             <td><%= agent.email %></td>
             <td><%= agent.name %></td>
             <td><%= link_to 'Edit', edit_agent_path(agent) %></td>
-            <td><%= link_to 'Destroy', agent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= button_to 'Destroy', agent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>

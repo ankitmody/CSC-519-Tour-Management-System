@@ -33,20 +33,22 @@
         <td><%= tour.end_date %></td>
         <td><%= tour.start_location %></td>
         <td><%= tour.itinerary %></td>
-        <td><%= tour.agent.name %></td>
+        <td><%= tour.agent.name%></td>
         <td><%= tour.seats %></td>
         <td><%= tour.status %></td>
+<!--        <td><%#= session[:user_id] %></td>-->
         <td><%= link_to 'Show', tour %></td>
-        <% unless session[:role] == 'Customer'%>  <%# Only Logged in Realtor and Admin has access %>
-          <td> <%= link_to_if(current_user.id == tour.agent.id,  'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  ) %></td>
-<!--          <td> <%#= link_to 'View Reviews', reviews_path  %></td>-->
+        <% unless session[:role] == 'Customer'%>  <!-- Only Logged in Realtor and Admin has access -->
+          <td> <%= link_to_if(session[:user_id] == tour.agent_id,  'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  ) %></td>
           <%end %>
         <%if session[:role] != 'Customer' %>
-        <td><%= link_to_if(tour.status != 'Completed' && (tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Edit', edit_tour_path(tour))%></td>
-        <td><%= link_to_if(tour.status != 'Completed' &&(tour.agent_id == current_user.id && session[:role] == 'Agent') || session[:role] == 'Admin','Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
+          <td><%= link_to_if(tour.status != 'Completed' && (tour.agent_id == session[:user_id] && session[:role] == 'Agent') || session[:role] == 'Admin','Edit', edit_tour_path(tour))%></td>
+          <% if (tour.status != 'Completed' &&(tour.agent_id == session[:user_id] && session[:role] == 'Agent') || session[:role] == 'Admin') %>
+              <td><%= button_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
         <% end %>
         <% if (session[:role] == 'Customer' || session[:role] == 'Admin') && tour.status == "In Future" %>
-          <td><%= link_to 'Bookmark', "/bookmarks/add/#{current_user.id}/#{tour.id}"%></td>
+          <td><%= link_to 'Bookmark', "/bookmarks/add/#{session[:user_id]}/#{tour.id}"%></td>
           <td><%= link_to 'Book', "/bookings/new/#{tour.id}" %></td>
         <% end %>
       </tr>

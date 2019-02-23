@@ -4,15 +4,13 @@ class AgentsController < ApplicationController
   # GET /agents
   # GET /agents.json
   def index
-    @agent = Agent.all
+    @agents = Agent.all
   end
 
   # GET /agents/1
   # GET /agents/1.json
   def show
-    if session[:role] == 'Admin'
-      @agent = Agent.all
-    elsif session[:role] == 'Agent'
+    if logged_in?
       @agent = Agent.find_by(email: current_user.email)
     end
   end

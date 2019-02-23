@@ -14,5 +14,5 @@
 <%= link_to 'View Tours', tours_path%> |
 <%= link_to 'View Bookings', bookings_path%> |
 <%= link_to 'View Bookmarks', bookmarks_path %> |
-<td><%= link_to 'Destroy', @customer, method: :delete, data: { confirm: 'Are you sure?' } %></td> |
-<%= link_to 'View Reviews', review_path %><br><br>
+<td><%= button_to 'Destroy', @customer, method: :delete, data: { confirm: 'Are you sure?' } %></td> |
+<%= link_to 'View Reviews', reviews_path %><br><br>

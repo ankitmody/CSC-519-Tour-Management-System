@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :agent_name, placeholder: "Enter Name"%>
+  </div>
+
+  <div class="field">
     <%= form.label :email %>
     <%= form.text_field :email, id: :agent_email, placeholder: "Enter email" %>
   </div>
@@ -23,11 +28,6 @@
     <%= form.label :password_confirmation, "Confirm password" %>
     <%= form.password_field :password_confirmation, id: :agent_password, placeholder: "Enter Password again"  %>
 
-  </div>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :agent_name, placeholder: "Enter Name"%>
   </div>
 
   <div class="actions">

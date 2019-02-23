@@ -14,7 +14,7 @@
       <tr>
         <td><%= link_to 'Show', search %></td>
         <td><%= link_to 'Edit', edit_search_path(search) %></td>
-        <td><%= link_to 'Destroy', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Destroy', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
