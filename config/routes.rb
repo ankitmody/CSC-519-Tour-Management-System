@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get '/bookings/new/:tour_id', to: 'bookings#new'
   get '/bookings/:booking_id/:tour_id', to: 'bookings#destroy'
   get '/reviews/:customer_id/:tour_id', to: 'reviews#new'
+  get '/customers', to: 'customers#index'
+  get '/agents', to: 'agents#index'
 
   root 'static_page#home'
   get '/home', to: 'static_page#home'
@@ -20,8 +22,7 @@ Rails.application.routes.draw do
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
-  get 'searches/index'
-  get 'search/index'
+
 
 
 
