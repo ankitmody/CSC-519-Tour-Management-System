@@ -59,10 +59,11 @@
 <br>
 
 <!--only for agent and admin-->
-<%if(session[:role] == 'Admin' || session[:role] == 'Agent') %>
-<%= link_to 'New Tour', new_tour_path  %>
-<% else %>
+<% if (session[:role] == 'Admin' || session[:role] == 'Customer')   %>
   <%= link_to 'Search Tours', new_search_path %>
-<%end%>
+  <% if(session[:role] == 'Admin' || session[:role] == 'Agent') %>
+    <%= link_to 'New Tour', new_tour_path  %>
+    <%end %>
+<% end %>
 
 <a href="javascript:history.back()" class="btn btn-default">Back</a>
