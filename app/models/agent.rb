@@ -1,5 +1,5 @@
 class Agent < ApplicationRecord
-  has_many :tours
+  has_many :tours, dependent: :destroy
 
 
   EMAIL_FORMAT = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

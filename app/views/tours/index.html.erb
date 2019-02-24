@@ -39,8 +39,11 @@
 <!--        <td><%#= session[:user_id] %></td>-->
         <td><%= link_to 'Show', tour %></td>
         <% unless session[:role] == 'Customer'%>  <!-- Only Logged in Realtor and Admin has access -->
-          <td> <%= link_to_if(session[:user_id] == tour.agent_id,  'Potential Buyers', "/bookmarks/potential_buyers/#{tour.id}"  ) %></td>
+          <td> <%= link_to_if(session[:user_id] == tour.agent_id,  'Bookmarked', "/bookmarks/potential_buyers/#{tour.id}"  ) %></td>
           <%end %>
+        <% unless session[:role] == 'Customer'%>  <!-- Only Logged in Realtor and Admin has access -->
+          <td> <%= link_to_if(session[:user_id] == tour.agent_id,  'Booked', bookings_path  ) %></td>
+        <%end %>
         <%if session[:role] != 'Customer' %>
           <td><%= link_to_if(tour.status != 'Completed' && (tour.agent_id == session[:user_id] && session[:role] == 'Agent') || session[:role] == 'Admin','Edit', edit_tour_path(tour))%></td>
           <% if (tour.status != 'Completed' &&(tour.agent_id == session[:user_id] && session[:role] == 'Agent') || session[:role] == 'Admin') %>

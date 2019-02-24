@@ -1,6 +1,7 @@
 class Tour < ApplicationRecord
-  belongs_to :agent
+  belongs_to :agent, dependent: :destroy
   has_many :bookmarks, dependent: :destroy
+  has_many :bookings, dependent: :destroy
 
   validates :name, :presence => true
   validates :description, :presence => true

@@ -63,7 +63,7 @@ class AgentsController < ApplicationController
   def destroy
     @agent.destroy
     respond_to do |format|
-      format.html { redirect_to agents_url, notice: 'Agent was successfully destroyed.'}
+      format.html { redirect_to '/home', notice: 'Agent was successfully destroyed.'}
       format.json { head :no_content }
     end
   end
