@@ -1,3 +1,7 @@
 # README
 
-https://sheltered-crag-35192.herokuapp.com/
+https://tranquil-cove-49961.herokuapp.com
+
+Admin Credentials: 
+Email: admin@ncsu.edu
+password: 12345678
