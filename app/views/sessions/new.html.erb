@@ -5,6 +5,8 @@
     <div class="row center form">
       <%= form_for(:session, url: login_path) do |f| %>
         <%= flash[:message]%>
+        <%= flash[:notice] %>
+        <br>
         <%= f.label :email %>
         <%= f.email_field :email %>
         <br>

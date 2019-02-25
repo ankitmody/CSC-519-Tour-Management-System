@@ -28,7 +28,7 @@ class CustomersController < ApplicationController
 
     respond_to do |format|
       if @customer.save
-        format.html { redirect_to '/home', notice: 'Customer was successfully created.' }
+        format.html { redirect_to '/login', notice: 'Customer was successfully created. Please login to continue!!' }
         format.json { render :show, status: :created, location: @customer }
       else
         format.html { render :new }

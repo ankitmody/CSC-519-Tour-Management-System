@@ -35,7 +35,7 @@ class AgentsController < ApplicationController
           log_in @agent,'Agent'
           flash[:notice] = "Welcome #{@agent.name}"
         end
-        format.html { redirect_to '/home', notice: 'Agent was successfully created.' }
+        format.html { redirect_to '/login', notice: 'Agent was successfully created. Please login to continue!!' }
         format.json { render :show, status: :created, location: @agent }
       else
         format.html { render :new }

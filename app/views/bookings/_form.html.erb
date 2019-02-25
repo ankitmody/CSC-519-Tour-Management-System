@@ -26,6 +26,11 @@
     <%= form.number_field :seats_booked %>
   </div>
 
+  <div>
+    <p>1. Book available seats (Only available seats will be booked and remaining seats would be dropped)</p>
+    <p>2. Book Available seats and add remaining to waitlist (Available seats will be booked and remaining seats would be added to waitlist)</p>
+    <p>3. Book only if all seats are available (If specified seats are not available all the seats would be added to waitlist)</p>
+  </div>
   <div class="field">
     <%= form.label :preference %>
     <% if Tour.where(id: params[:tour_id]).pluck(:seats).first > 0%>
