@@ -56,8 +56,13 @@ class CustomersController < ApplicationController
   def destroy
     @customer.destroy
     respond_to do |format|
-      format.html { redirect_to '/home', notice: 'Customer was successfully destroyed.' }
-      format.json { head :no_content }
+      if (session[:role] == 'Admin')
+        format.html { redirect_to @customer, notice: 'Customer was successfully destroyed.' }
+        format.json { head :no_content }
+      else
+        format.html { redirect_to '/home', notice: 'Customer was successfully destroyed.' }
+        format.json { head :no_content }
+      end
     end
   end
 

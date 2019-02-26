@@ -63,8 +63,13 @@ class AgentsController < ApplicationController
   def destroy
     @agent.destroy
     respond_to do |format|
-      format.html { redirect_to '/home', notice: 'Agent was successfully destroyed.'}
-      format.json { head :no_content }
+      if (session[:role] == 'Admin')
+        format.html { redirect_to @agent, notice: 'Agent was successfully destroyed.'}
+        format.json { head :no_content }
+      else
+        format.html { redirect_to '/home', notice: 'Agent was successfully destroyed.'}
+        format.json { head :no_content }
+      end
     end
   end
 
