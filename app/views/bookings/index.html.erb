@@ -28,10 +28,10 @@
         <% else %>
           <td><%= 'Wait Listed' %> </td>
         <%end %>
+<!--        <td><%#= link_to 'Delete Booking', "/partial_delete/#{booking.id}" %></td>-->
+        <td><%= link_to 'Delete Booking', "/bookings/#{booking.id}/#{booking.tour_id}" %></td>
 
-        <td><%= button_to 'Delete Booking', "bookings/#{booking.id}/#{booking.tour.id}", data: { confirm: 'Are you sure?' } %></td>
-
-        <% if booking.tour.status == 'Completed' %>
+        <% if booking.tour.status == 'Completed' && session[:role] == 'Customer' %>
           <td><%= link_to 'Write Review', "reviews/#{booking.customer.id}/#{booking.tour.id}" %></td>
         <% end %>
       </tr>

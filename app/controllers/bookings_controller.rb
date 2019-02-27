@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: [:show, :edit, :update]
+  before_action :set_booking, only: [:show, :edit]
 
   # GET /bookings
   # GET /bookings.json
@@ -55,7 +55,7 @@ class BookingsController < ApplicationController
     end
     respond_to do |format|
         if  @booking.save
-          format.html { redirect_to @booking, notice: 'Booking was successfully created.' }
+          format.html { redirect_to bookings_url, notice: 'Booking was successfully created.' }
           format.json { render :show, status: :created, location: @booking }
         else
           format.html { render :new }
@@ -78,6 +78,18 @@ class BookingsController < ApplicationController
     end
   end
 
+
+  # def partial_delete
+  #   # @booking = Booking.all
+  #   @booking = Booking.find(params[:booking_id])
+  #
+  #   if (@booking.seats_booked  )
+  #
+  #   end
+  # end
+
+
+
   # DELETE /bookings/1
   # DELETE /bookings/1.json
   def destroy
@@ -99,6 +111,7 @@ class BookingsController < ApplicationController
             booking.status = 1
             booking.save
             @tour.save
+            WaitListConfirmationMailer.notify_user(booking.customer).deliver
           end
         end
 

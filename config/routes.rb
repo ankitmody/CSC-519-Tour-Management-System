@@ -8,13 +8,17 @@ Rails.application.routes.draw do
   resources :agents
   resources :admins
 
+  root 'static_page#home'
+
   get 'bookmarks/potential_buyers/:tour_id', to: 'bookmarks#potential_buyers'
   get 'bookmarks/add/:customer_id/:tour_id', to: 'bookmarks#add'
   get '/bookings/new/:tour_id', to: 'bookings#new'
-  post '/bookings/:booking_id/:tour_id', to: 'bookings#destroy'
+  get '/bookings/:booking_id/:tour_id', to: 'bookings#destroy'
   get '/reviews/:customer_id/:tour_id', to: 'reviews#new'
 
-  root 'static_page#home'
+  # get '/partial_delete/:booking_id', to: 'bookings#partial_delete'
+  # get '/partial_delete/bookings/:booking_id/:seats_booked', to: 'bookings#partial_delete'
+
   get '/home', to: 'static_page#home'
   get    '/signup',  to: 'sessions#redirect'
   get    '/login',   to: 'sessions#new'

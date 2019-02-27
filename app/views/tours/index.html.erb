@@ -49,6 +49,9 @@
           <% if (tour.status != 'Completed' &&(tour.agent_id == session[:user_id] && session[:role] == 'Agent') || session[:role] == 'Admin') %>
               <td><%= button_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           <% end %>
+          <% if(tour.status == 'Completed' && (session[:role] == 'Admin' || current_user.id == tour.agent.id)) %>
+            <td><%=link_to 'View Reviews', reviews_path %></td>
+          <% end %>
         <% end %>
         <% if (session[:role] == 'Customer' || session[:role] == 'Admin') && tour.status == "In Future" %>
           <td><%= link_to 'Bookmark', "/bookmarks/add/#{session[:user_id]}/#{tour.id}"%></td>

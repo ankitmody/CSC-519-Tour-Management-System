@@ -21,6 +21,7 @@
         <td scope="row"><%= bookmark.customer.email %></td>
         <td scope="row"><%= bookmark.tour.name %></td>
         <td scope="row"><%= bookmark.tour.agent.name %></td>
+        <td><%= button_to 'Destroy', bookmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
    <%end %>

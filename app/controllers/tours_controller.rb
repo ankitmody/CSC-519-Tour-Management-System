@@ -24,7 +24,6 @@ class ToursController < ApplicationController
   # POST /tours
   # POST /tours.json
   def create
-
     @tour = Tour.includes(:agent).new(tour_params)
     respond_to do |format|
       if @tour.save
@@ -39,7 +38,6 @@ class ToursController < ApplicationController
 
   def decrement_seats
     @tour = Tour.all
-
   end
 
   # PATCH/PUT /tours/1
