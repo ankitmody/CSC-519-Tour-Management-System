@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_26_212541) do
+ActiveRecord::Schema.define(version: 2019_03_01_163320) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email"
@@ -98,6 +98,8 @@ ActiveRecord::Schema.define(version: 2019_02_26_212541) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "agent_id"
+    t.string "country"
+    t.string "state"
     t.index ["agent_id"], name: "index_tours_on_agent_id"
   end
 

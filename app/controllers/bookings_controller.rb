@@ -111,7 +111,7 @@ class BookingsController < ApplicationController
             booking.status = 1
             booking.save
             @tour.save
-            WaitListConfirmationMailer.notify_user(booking.customer).deliver
+            WaitListConfirmationMailer.notify_user(booking.customer).deliver_now
           end
         end
 
