@@ -16,12 +16,12 @@
     <% @reviews.each do |review| %>
       <% if review.customer_id == current_user.id  %>
       <tr>
-        <%= review.customer.id %>
+
         <td><%= review.tour_id %></td>
         <td><%= review.subject %></td>
         <td><%= review.reviews %></td>
 
-        <% if session[:role] == 'Customer' %>
+        <% if session[:role] == 'Customer' || session[:role] == 'Admin'%>
           <td><%= button_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>

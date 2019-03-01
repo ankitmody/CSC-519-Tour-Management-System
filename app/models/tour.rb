@@ -5,13 +5,13 @@ class Tour < ApplicationRecord
 
   validates :name, :presence => true
   validates :description, :presence => true
-  validates :price, :presence => true
+  validates :price, :presence => true,:numericality => {:greater_than => 0}
   validates :booking_deadline, :presence => true
   validates :start_date, :presence => true
   validates :end_date, :presence => true
   validates :start_location, :presence => true
   validates :itinerary, :presence => true
-  validates :seats, :presence => true
+  validates :seats, :presence => true , :numericality => {:greater_than => 0}
   # validates :agent_id, :presence => true
   validates :status, :presence => true
 
