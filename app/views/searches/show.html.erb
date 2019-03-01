@@ -2,6 +2,7 @@
 
 <% if @search.search_tours.empty? %>
   <p> No records found</p>
+  <a href="javascript:history.back()" class="btn btn-default">Back</a>
 <% else %>
   <% @search.search_tours.each do |c| %>
     <div class="div">
@@ -23,6 +24,8 @@
     </div>
   <% end %>
 
-<%= link_to 'Edit', edit_search_path(@search) %> |
+<% unless session[:role] == 'Customer' %>
+  <%= link_to 'Edit', edit_search_path(@search) %> |
+<% end %>
 <%= link_to 'Back', searches_path %>
 <%end %>

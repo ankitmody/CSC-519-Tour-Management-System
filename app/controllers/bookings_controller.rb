@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: [:show, :edit]
+  before_action :set_booking, only: [:show, :edit , :update]
 
   # GET /bookings
   # GET /bookings.json
@@ -67,8 +67,37 @@ class BookingsController < ApplicationController
   # PATCH/PUT /bookings/1
   # PATCH/PUT /bookings/1.json
   def update
+
+    # if booking_params[:seats_booked].to_i < @booking.seats_booked.to_i
+      tp = params.fetch(:booking).permit(:customer_id,:tour_id,:seats_booked,:preference)
+      seats = @booking.seats_booked.to_i - booking_params[:seats_booked].to_i
+      @tour = Tour.find(@booking.tour_id)
+      @tour.seats = @tour.seats + booking_params[:seats_booked].to_i
+      @tour.save
+     tp[:seats_booked] = seats
+
+      @tour = Tour.find(@booking.tour_id)
+
+      # booking_db = Booking.order("created_at ASC").find(params[:tour_id])
+      booking_db = Booking.all.sort_by {|booking| booking.created_at }
+      booking_db.each do |booking|
+        if booking.seats_booked <= @tour.seats && booking.status == 0
+          @tour.seats = @tour.seats - booking.seats_booked
+          booking.status = 1
+          booking.save
+          @tour.save
+          WaitListConfirmationMailer.notify_user(booking.customer).deliver_now
+        end
+      end
+
+
+      # format.html { redirect_to @booking, notice: 'cannot delete more seats than booked' }
+      # format.json { render :edit, status: :ok, location: @booking }
+    # end
+
+
     respond_to do |format|
-      if @booking.update(booking_params)
+      if @booking.update(tp)
         format.html { redirect_to @booking, notice: 'Booking was successfully updated.' }
         format.json { render :show, status: :ok, location: @booking }
       else
@@ -114,7 +143,6 @@ class BookingsController < ApplicationController
             WaitListConfirmationMailer.notify_user(booking.customer).deliver_now
           end
         end
-
 
     end
 

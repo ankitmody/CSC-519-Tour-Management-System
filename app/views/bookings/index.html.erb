@@ -29,7 +29,8 @@
           <td><%= 'Wait Listed' %> </td>
         <%end %>
 <!--        <td><%#= link_to 'Delete Booking', "/partial_delete/#{booking.id}" %></td>-->
-        <td><%= link_to 'Delete Booking', "/bookings/#{booking.id}/#{booking.tour_id}" %></td>
+        <td><%= link_to 'Cancel entire Booking', "/bookings/#{booking.id}/#{booking.tour_id}" %></td>
+        <td><%= link_to 'Cancel seats', edit_booking_path(booking) %></td>
 
         <% if booking.tour.status == 'Completed' && session[:role] == 'Customer' %>
           <td><%= link_to 'Write Review', "reviews/#{booking.customer.id}/#{booking.tour.id}" %></td>

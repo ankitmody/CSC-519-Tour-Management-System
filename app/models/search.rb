@@ -4,7 +4,7 @@ class Search < ApplicationRecord
     num_0 = 0
     tours = Tour.all
     tours = tours.where("lower(itinerary) like ?", "%#{itinerary.downcase}%") if itinerary.present?
-
+    tours = tours.where("lower(name) like ?", "%#{name.downcase}%") if name.present?
     # tours = tours.where("lower(name) like ?", "%#{name.downcase}%") if name.present?
     #
     tours = tours.where("price >= ?", min_price) if min_price.present?
