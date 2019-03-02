@@ -71,9 +71,11 @@ The preference of the booking can be set according to the above conditions.
 
 A customer can also cancel seats of a tour which they have booked. This cancellation can be performed in two ways:
 
-*1) Cancel entire booking
+*1) Cancel entire booking*
 
 *2) Cancel seats* This option can be used to update a booking. A *partial cancellation* on the seats can be performed through this option. 
+
+The admin as well as an agent can see the *customer details* of all the people who have *booked* a tour through the following: **Login --> View All Tours/ Show Tours --> Booked customer**
 
 
 ### Bookmark
@@ -83,6 +85,8 @@ A customer can bookmark only those tours which are *In Future*. The tours which 
 The bookmarking task can be performed through **Login --> View All Tours --> Bookmark**
 
 These bookmarked tours can be viewed by both, *Agent* as well as the *Admin*.
+
+The admin as well as an agent can see the *customer details* of all the people who have *bookmarked* a tour through the following: **Login --> View All Tours/ Show Tours --> Bookmarked customer**
 
 
 ### Review
@@ -109,6 +113,7 @@ While adding a tour, *Image Uploading* for a tour is also possible. The tours on
 ## Testing
 
 Testing has been performed on the *Agent* module successfully.
+
 
 
 # Extra Credits
