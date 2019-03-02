@@ -1,10 +1,30 @@
 # README
+
+## Link to the depolyed app:
+
 https://tranquil-cove-49961.herokuapp.com
 
-# Admin Credentials:
+## Default Credentials:
+
+## Admin
+
 Email: admin@ncsu.edu
 
-password: 12345678
+Password: 12345678
+
+## Agent
+
+Email: agent@ncsu.edu
+
+Password: 12345678
+
+## Customer
+
+Email: customer@ncsu.edu
+
+Password: 12345678
+
+## ABOUT
 
 In this application there are three different types of users in the system:
 
@@ -56,8 +76,6 @@ A customer can also cancel seats of a tour which they have booked. This cancella
 *2) Cancel seats* This option can be used to update a booking. A *partial cancellation* on the seats can be performed through this option. 
 
 
-
-
 ### Bookmark
 
 A customer can bookmark only those tours which are *In Future*. The tours which are *Cancelled* or *Completed* cannot be bookmarked.
@@ -100,6 +118,8 @@ The following task has also been performed which is a part of extra credit:
 **Send an email when the status of the customer moves from waitlist to booked.**
 
 When a customer has his/her own booking, they can cancel the booking based on their preference. During this process, if another customer which was added in the *waitlist* of the same tour, will be added to the booking list upon successful cancellation of the previous user. If the user gets a booking, i.e, the booking is moved from a *waitlist* to *confirmed* status, then an email will be sent to the customer to the ID with which the customer initially signed up with.
+
+The email will be sent from **rubyminers.tms@gmail.com**.
 
 
 
